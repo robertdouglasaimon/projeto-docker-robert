@@ -5,9 +5,25 @@ services:
     restart: always
     ports:
       - "3000:3000"
+    depends_on:
+      - sqlite
     networks:
       - minha_rede
+    volumes:
+      - db_data:/usr/src/app/db
+
+  sqlite:
+    image: alpine:latest
+    container_name: sqlite_container
+    command: ["tail", "-f", "/dev/null"] # só mantém o contêiner ativo
+    networks:
+      - minha_rede
+    volumes:
+      - db_data:/usr/src/app/db
 
 networks:
   minha_rede:
     driver: bridge
+
+volumes:
+  db_data:
