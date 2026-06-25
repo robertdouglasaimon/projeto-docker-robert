@@ -1,0 +1,13 @@
+services:
+  node:
+    build: ./app
+    container_name: node_container
+    restart: always
+    ports:
+      - "3000:3000"
+    networks:
+      - minha_rede
+
+networks:
+  minha_rede:
+    driver: bridge
