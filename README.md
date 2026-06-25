@@ -66,4 +66,4 @@ O projeto é mínimo, mas demonstra claramente o isolamento e comunicação de s
     docker compose down
 ```
 ## Créditos finais ✅
-No final professor, eu preferi fazer com compose mesmo, e usando o docker desktop. Lembra um pouco a forma de gerenciar com o github desktop, da pra gerenciar bem os containers e você tem um feedback "visual". Optei pelo sqlite pela familiaridade mesmo e é isso. 
+No final professor, eu preferi fazer com compose mesmo, e usando o docker desktop. Lembra um pouco a forma de gerenciar com o github desktop, da pra gerenciar bem os containers e você tem um feedback "visual". Optei pelo sqlite pela familiaridade mesmo e é isso. Não tive tempo para criar uma idea bem estruturada, então foquei em fazer algo que mostrasse a utilidade e uma outra forma de fazer conexão com o docker.
